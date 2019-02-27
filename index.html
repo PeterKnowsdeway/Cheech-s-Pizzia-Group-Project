@@ -17,11 +17,13 @@
         First name: <input type="text" name="Name"><br>
         Phone Number: <input type="text" name="phoneNumber"><br>
         <input type="submit" value="Submit">
-      </form>
+    </form>
       <select id="List"></select>
-   
-    <script> 
-      var list = ["1","2","3","4","5","6","7","8","9","10"];     
+      <select id="List2"></select>
+
+
+    <script> //Selection box for number of pizza
+      var list = ["1","2","3","4","5","6","7","8","9","10"];
 
      var sel = document.getElementById('List');
      for(var i = 0; i < list.length; i++) {
@@ -30,6 +32,21 @@
       opt.value = list[i];
       sel.appendChild(opt);
 }
+      </script>
+
+      <script> //Selection box for type of pizza
+
+        var type = ["Cheese", "Pepperoni", "Meat Lovers", "Sausage", "Taco"];
+        var price = [" $8.00", " $10.00", " $12.00", " $10.00", " $15.00"]
+
+        var sel = document.getElementById('List2');
+        for(var i = 0; i < type.length; i++) {
+         var opt = document.createElement('option');
+         opt.innerHTML = type[i] + price[i];
+         opt.value = type[i] + price[i];
+         sel.appendChild(opt);
+}
+
       </script>
 
 
