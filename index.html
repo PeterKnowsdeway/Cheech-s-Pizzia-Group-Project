@@ -18,15 +18,18 @@
         Phone Number: <input type="text" name="phoneNumber"><br>
         <input type="submit" value="Submit">
       </form>
-    <select name = "Number of pizzas" id = "number">
+    <select id = "number">
    
     </select>
-      <script> 
+    <script> 
       function choices(){
        var myNumber = document.getElementById("number");
        var ArrayofChoices = ["1","2","3","4","5","6","7","8","9","10"];
        for (var i = 0; i < ArrayofChoices.length; i++ ){ //Start of for loop
-       document.write ("<option> value='" + ArrayOfChoices[i][0] + "' '"+ ArrayOfChoices[i][1]+"'</option>"); //Display thumbnails
+        var opt = document.createElement('option');
+         opt.innerHTML = ArrayofChoices[i];
+         opt.value = ArrayofChoices[i];
+         myNumber.appendChild(opt);
        }
       }
       </script>
