@@ -73,11 +73,11 @@
       <script> //Output information
         document.getElementById("myBtn").addEventListener("click", myFunction);
         function myFunction(){
-          document.getElementById("caption");
-          document.getElementById('name').innerHTML = "caption" ;
-          document.getElementById('number').innerHTML = "caption" ;
-          document.getElementById('List').innerHTML = "caption" ;
-          document.getElementById('List2').innerHTML = "caption" ;
+          var x = document.getElementById("name").innerHTML;
+          document.getElementById('caption').innerHTML = x ;
+          document.getElementById('number').innerHTML = "" ;
+          document.getElementById('List').innerHTML = "" ;
+          document.getElementById('List2').innerHTML = "" ;
         }
 
           
@@ -85,7 +85,7 @@
 
       </script>
 
-      <p id="caption"></p>
+      <p id="caption">hello</p>
       <footer class="page-footer font-small teal pt-4">
 
           <!-- Footer Text -->
