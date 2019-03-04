@@ -13,9 +13,9 @@
   <body>
     <h1>Cheech's Pizza</h1>
 
-    <form action="/action_page.php">
-        First name: <input type="text" name="Name"><br>
-        Phone Number: <input type="text" name="phoneNumber"><br>
+    <form>
+        First name: <input type="text" name="Name" id="name"><br>
+        Phone Number: <input type="text" name="phoneNumber" id="number"><br>
         <button id="myBtn">Order</button>
     </form>
       <select id="List"></select>
@@ -46,9 +46,21 @@
          opt.value = type[i] + price[i];
          sel.appendChild(opt);
 }
+      </script>
+
+      <script> //Output information
+        document.getElementById("myBtn").addEventListener("click", myFunction());
+      </script>
+
+      <script>
+            
+        function myFunction(){
+          document.getElementById("output").innerHTML = ; 
+        }
 
       </script>
 
+      <p id="output"></p>
 
 </body>
 </html>
