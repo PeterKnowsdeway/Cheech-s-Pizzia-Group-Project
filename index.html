@@ -39,7 +39,7 @@
     <form style = "text-align: center; padding-right: 200px;">
         First name: <input type="text" name="Name" id="name"><br>
     </form>
-    <form style=" text-align:center;">
+    <form style=" text-align:center;padding-right:233px;">
         Phone Number: <input type="text" name="phoneNumber" id="number"><br>
     </form>
       <select id="List"></select>
@@ -73,22 +73,22 @@
       <script> //Output information
         document.getElementById("myBtn").addEventListener("click", myFunction);
         function myFunction(){
-          document.getElementById('name').innerHTML = "" ;
+          var x = document.getElementById("name").innerHTML;
+          document.getElementById("output").innerHTML = x ;
+          var z = document.getElementById('number').innerHTML;
+          document.getElementById("output").innerHTML = z ;
           document.getElementById('number').innerHTML = "" ;
           document.getElementById('List').innerHTML = "" ;
           document.getElementById('List2').innerHTML = "" ;
         }
 
-        
+
+
+
       </script>
 
 
       <p id="output"></p>
-
-
-
-      <p id="caption"></p>
-
       <footer class="page-footer font-small teal pt-4">
 
           <!-- Footer Text -->
